@@ -1,0 +1,1041 @@
+﻿/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type="button"] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+/*header*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background: #fff;
+  -webkit-columns: #000;
+  columns: #000;
+  position: relative;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #fff;
+}
+header{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+header img{
+  margin-right: 0%;
+  width: 30px;
+  height: 30px;
+}
+#logo_header{
+  width: 237px;
+height: 209.86px;
+margin: 0;
+}
+header p{
+  font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+}
+.header_text p:last-child{
+  margin-top: 10px;
+}
+header .left_column{
+  display: flex;
+  align-items: center;
+}
+header .left_column img{
+  margin-right: 20px;
+}
+
+header .right_column{
+  display: flex;
+  align-items: center;
+}
+
+header .right_column img{
+  margin-right: 20px;
+}
+/*
+main nav {
+  width: 100%;
+  background: #275a5a;
+}
+main nav ul {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+main nav ul li {
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main nav ul li:first-child {
+  margin-left: 0;
+}
+nav a{
+  height: 100%;
+  padding: 20px;
+}
+/* скрываем чекбокс */
+nav{
+  position: relative;
+}
+.hamburger-menu{
+  position: relative;
+  z-index: 2;
+}
+/* Dropdown Button */
+nav a{
+  color: #000;
+}/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+ul li:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.dropbtn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  background: #ECEFF1;
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: #CFD8DC;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+main .skyscraper {
+  width: 100%;
+  background: url(../img/skyscraper.png) no-repeat;
+  height: 450px;
+  width: 100%;
+  background-size: cover; }
+  main .skyscraper .blockout {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.47);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 115px; }
+    main .skyscraper .blockout .pad {
+      margin-left: -575px;
+      width: 645px;
+      height: 180px;
+      background: rgba(0, 0, 0, 0.58);
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 135.9%;
+      color: #ffffff;
+      padding: 40px 25px 40px 45px;
+      position: relative; }
+      main .skyscraper .blockout .pad::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 140px;
+        background: #f27468;
+        border-radius: 4px;
+        position: absolute;
+        top: 20px;
+        left: 13px; }
+/* footer */
+
+footer {
+  background: #275A5A;
+  width: 100%;
+  padding: 0 10%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: #fff;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+footer #logo_footer {
+  width: 237px;
+  height: 208.86px;
+  margin-top: -50px;
+}
+footer .text_left {
+  margin-left: 40px;
+}
+footer .text_left .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .text_left .numbers img {
+  width: 50px;
+  height: 50px;
+}
+
+#our_href {
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.53);
+  position: absolute;
+  width: 202px;
+  height: 30px;
+  left: 18px;
+  bottom: 10px;
+}
+footer .text_left .numbers p {
+  font-size: 24px;
+  line-height: 35px;
+  margin-left: 17px;
+}
+footer  .text_left .icons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+footer .text_left .icons a {
+  width: 50px;
+  height: 50px;
+}
+footer .text_left .icons a:first-child {
+  margin-left: 0;
+}
+footer .text_right {
+}
+footer .text_right .route_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .text_right .route_text img {
+  width: 50px;
+  height: 50px;
+}
+footer .text_right .route_text .route_text_p {
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: 20px;
+}
+footer .text_right .route_text .route_text_p p:last-child {
+  margin-top: 15px;
+}
+footer .text_right button {
+  width: 170px;
+  height: 50px;
+  background: #f27468;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  font-weight: 400;
+  color: #fff;
+  padding: 16px 21px;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.feedback {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(54, 52, 52, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.feedback .blockout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 570px;
+  margin: -290px 0 0 -250px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.feedback .blockout p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.feedback .blockout form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.feedback .blockout form input,
+.feedback .blockout form textarea {
+  width: 326px;
+  height: 50px;
+  padding: 16px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.49);
+  margin-top: 30px;
+  border: 2px solid #454545;
+}
+.feedback .blockout form textarea {
+  height: 120px;
+  margin-bottom: 40px;
+}
+.feedback .blockout form > div {
+  width: 100%;
+  width: 500px;
+  height: 120px;
+  background: #275a5a;
+}
+.feedback .blockout form > div input {
+  width: 220px;
+  height: 50px;
+  background: #f27468;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border: none;
+  padding: 17px 63px;
+}
+.feedback .blockout #close_feedback {
+  position: absolute;
+  background: transparent;
+  right: 10px;
+  top: 10px;
+  border: none;
+}
+.feedback .blockout #close_feedback .fas {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.successfully {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(54, 52, 52, 0.7);
+  top: 0;
+}
+
+.successfully_block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: -75px;
+  width: 140px;
+  height: 150px;
+  background: #f27468;
+  border-radius: 42px;
+  text-align: center;
+  color: white;
+}
+.successfully_block div {
+  margin-top: 25px;
+  font-size: 60px;
+}
+.successfully_block p {
+  font-size: 14px;
+  line-height: 17px;
+}
+@media (min-width: 840px) and (max-width: 1240px) {
+  .phone_number {
+    margin-left: 10% !important;
+  }
+  .footer_text {
+    margin-left: 10% !important;
+  }
+  .right_column {
+    margin-left: 5% !important;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 840px) {
+  .footer_text p {
+    font-size: 18px;
+  }
+  .text_right {
+    margin-left: 5% !important;
+  }
+  .footer_text > img {
+    display: none;
+  }
+  .footer_text {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: 500px !important;
+  }
+  .text_right {
+    margin-top: 40px !important;
+  }
+  .text_right button {
+    margin-left: 0 !important;
+  }
+  #our_href {
+    display: none;
+  }
+  main nav ul li {
+    margin-left: 0 !important;
+  }
+  nav ul {
+    justify-content: space-around !important;
+  }
+  .wrapper {
+    justify-content: space-around;
+  }
+  .phone_number {
+    margin-left: 0 !important;
+  }
+  .map {
+    margin-left: 0 !important;
+  }
+  .wrapper > img {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+  header{
+    height: 90px !important;
+    width: 90% !important;
+  }
+  header p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+  .header_text p:last-child{
+    margin: 0;
+  }
+  #logo_header {
+    width: 59px !important;
+    height: 53.12px !important ;
+    margin-left: 20px !important;
+  }
+  .phone_number {
+    margin-left: 25px !important;
+  }
+  header img {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  
+header .left_column img{
+  margin-right: 5px !important;
+}
+
+header .right_column img{
+  margin-right: 5px !important;
+}
+  .map {
+    margin-left: 25px !important;
+    white-space: nowrap !important;
+  }
+  h2 {
+    font-size: 24px !important;
+    line-height: 29px !important;
+  }
+  
+  .skyscraper {
+    width: 100%;
+    height: 160px !important;
+  }
+  .skyscraper .blockout {
+    padding: 0 !important;
+  }
+  .pad {
+    margin-left: -100px !important;
+    padding: 4px 12px !important;
+    width: 150px !important;
+    height: 60px !important;
+    margin-top: 55px !important;
+  }
+  .pad h1 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 135.9%;
+  }
+  .pad::before {
+    width: 3px !important;
+    height: 41px !important;
+    margin-left: -10px !important;
+    margin-top: -12px !important;
+  }
+  footer #logo_footer {
+    margin: 0 !important;
+    margin-top: -36px !important;
+    width: 87.42px !important;
+    height: 79.12px !important;
+  }
+  .numbers {
+    margin-left: 5px;
+    justify-content: flex-end;
+  }
+  .numbers img {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .numbers p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+  .text_left {
+    margin-left: 0 !important;
+  }
+  .text_right {
+    margin-left: 20px !important;
+  }
+  .route_text img {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .route_text p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+  footer {
+    padding: 0 10% ;
+    padding-bottom: 15px;
+    padding-top: 35px;
+  }
+  .footer_text {
+    margin-top: 20px !important;
+  }
+  footer button {
+    width: 100px !important;
+    height: 25px !important;
+    margin: 0 !important;
+    margin-top: 20px !important;
+    margin-left: 0px !important;
+    font-weight: 600;
+    font-size: 9px !important;
+    line-height: 11px !important;
+    padding: 5px !important;
+  }
+  .icons {
+    margin-top: 20px !important;
+  }
+  .icons a {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 20px !important;
+  }
+  .icons a:first-child {
+    margin-right: 0 !important;
+  }
+  #our_href {
+    font-size: 2px !important;
+    line-height: 2px !important;
+    height: 4px !important;
+    left: 4px !important;
+    bottom: 20px !important;
+  }
+  .route_text_p {
+    margin-left: 5px !important;
+  }
+  .route_text_p p:last-child {
+    display: none;
+  }
+  .feedback .blockout{
+    width: 80% !important;
+    left: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    margin: 0 auto !important;
+    margin-top: 100px !important;
+  }
+  .feedback .blockout p{
+    padding-top: 45px !important;
+    font-size: 20px !important;
+    line-height: 23px !important;
+  }
+  .blockout form>input,.blockout form textarea{
+    width: 80% !important;
+  }
+  .feedback .blockout div{
+    width: 300px !important;
+  }
+  
+  .menu__btn{
+    left: 10px !important;
+    top: 10px !important;
+  }
+}
+@media (min-width: 440px) and (max-width: 1240px) {
+  .pad {
+    margin-left: 0 !important;
+  }
+
+  .right_column {
+    margin-left: 5% !important;
+  }
+}

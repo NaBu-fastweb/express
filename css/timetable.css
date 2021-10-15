@@ -1,0 +1,313 @@
+
+#timetable, #route{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#timetable h2{
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 25px 0;
+}
+#timetable>p{
+    font-size: 24px;
+line-height: 144.4%;
+padding-top: 22px;
+}
+.road_text{
+    display: flex;
+    position: relative;
+    width: 70%;
+    left: 3%;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-around;
+    word-wrap: none;
+}
+#timetable .line, #timetable .right_column{
+    width: 32%;
+}
+
+#timetable .left_column{
+    width: 25%;
+}
+.road_text p{
+    font-size: 24px;
+line-height: 144.4%;
+}
+.road_text span{
+    font-size: 14px;
+line-height: 144.4%;
+}
+.line hr{
+    margin-top: 34px;
+}
+.line hr:first-child{
+    margin-top: 15px;
+}
+
+#timetable button{
+    font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+text-transform: uppercase;
+color: #FFFFFF;
+width: 220px;
+height: 50px;
+margin-top: 50px;
+background: #F27468;
+padding: 10px;
+border: none;
+}
+#route h2{
+    color: #000;
+    margin-top: 60px;
+}
+#route li:hover{
+    background: #fff;
+}
+.list5a {
+    margin-top: 50px;
+    list-style: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}    
+.list5a li {
+    font-size: 24px;
+line-height: 144.4%;
+    margin-top: 10px;
+    width: 40%;
+    position: relative;
+    padding: 10px 30px;
+    background: linear-gradient(to left, #275A5A 0%, #FFF, #275A5A);
+    border: 2px solid #275A5A;
+    color: #275A5A;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, .2);
+    margin-bottom: 5px;
+    text-align:center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.list5a li:before {
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(to left, #275A5A 0%, #FFF, #275A5A);
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.list5a li:hover:before {
+    width: 100%;
+    opacity: 1;
+}  
+.list5a li:last-child{
+    margin-bottom: 60px;
+}
+.route_text_1{
+    display: flex;
+    justify-content: space-between; 
+}
+.route_text_1 p:last-child{
+    margin-left: 20px;
+}
+.route_text_1 p{
+    font-size: 18px;
+line-height: 144.4%;
+margin-bottom: 75px;
+}
+
+
+.bron_tabletime {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(54, 52, 52, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .bron_tabletime .blockout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 570px;
+    margin: -290px 0 0 -250px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .bron_tabletime .blockout p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .bron_tabletime .blockout form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .bron_tabletime .blockout form input,
+  .bron_tabletime .blockout form textarea {
+    width: 326px;
+    height: 50px;
+    padding: 16px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.49);
+    margin-top: 30px;
+    border: 2px solid #454545;
+  }
+  .bron_tabletime .blockout form textarea {
+    height: 120px;
+    margin-bottom: 40px;
+  }
+  .bron_tabletime .blockout form > div {
+    width: 100%;
+    width: 500px;
+    height: 120px;
+    margin-top: 50px;
+    background: #275a5a;
+  }
+  .bron_tabletime .blockout form > div input {
+    width: 220px;
+    height: 50px;
+    background: #f27468;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    border: none;
+  }
+  .bron_tabletime .blockout #close_tabletime {
+    position: absolute;
+    background: transparent;
+    right: 10px;
+    top: 10px;
+    border: none;
+  }
+  .bron_tabletime .blockout #close_tabletime .fas {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+
+@media (max-width: 440px) {
+    #timetable h2{
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+        
+    #timetable>p{
+        font-size: 12px;
+        line-height: 144.4%;
+    padding-top: 0px !important;
+    }
+    .road_text .left_column{
+        width: 32%;
+    }
+    .road_text .right_column{
+        margin-left: 10px !important;
+        width: 44%;
+    }
+    .line{
+        width: 20%;
+    }
+    .road_text p{
+        font-size: 9px !important;
+line-height: 180% !important;
+    }
+    .road_text hr{
+        margin-top: 0px;
+    } .road_text hr:first-child{
+        margin-top: 5px;
+    }
+    .road_text span{
+        font-size: 4px;
+line-height: 144.4%;
+    }
+    
+#timetable button{
+    margin-top: 20px !important;
+    width: 134.64px;
+height: 30.6px;
+font-size: 10px;
+line-height: 12px;
+padding: 5px;
+}
+.list5a{
+    width: 100% !important;
+}
+.list5a li{
+    font-size: 15px;
+    padding: 5px !important;
+    height: 40px;
+}
+.route_text_1{
+    width: 80%;
+    justify-content: center;
+}
+.route_text_1 p{
+    font-size: 10px !important;
+line-height: 144.4% !important;
+}
+
+
+.bron_tabletime .blockout{
+    width: 80% !important;
+    left: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    margin: 0 auto !important;
+    margin-top: 100px !important;
+  }
+  .bron_tabletime .blockout p{
+    padding-top: 45px !important;
+    font-size: 18px !important;
+    line-height: 23px !important;
+  }
+  .blockout form>input{
+    width: 80% !important;
+  }
+  .bron_tabletime .blockout div{
+    width: 300px !important;
+  }
+  .button_bron button{
+      width: 60% !important;
+  }
+}    

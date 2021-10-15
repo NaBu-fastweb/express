@@ -1,0 +1,356 @@
+
+main #reservation {
+  background: #275a5a;
+  width: 100%;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+main #reservation h2 {
+  padding-top: 35px;
+}
+main #reservation p {
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  font-weight: 300;
+  padding-top: 24px;
+}
+main #reservation form {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+main #reservation form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.49);
+}
+main #reservation form :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.49);
+}
+main #reservation form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.49);
+}
+main #reservation form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.49);
+}
+main #reservation form input {
+  margin-top: 30px;
+  background: transparent;
+  border: 2px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.49);
+  width: 18%;
+  height: 50px;
+  padding: 16px 13px 17px 21px;
+}
+main #reservation form input:first-child {
+  margin-left: 0;
+}
+main #reservation form input:focus {
+  outline: none;
+  border: 2px solid #e4e4e4;
+}
+main #reservation form input:last-child {
+  background: #f27468;
+  margin-top: 40px;
+  min-width: 230px;
+  border: none;
+  font-weight: 600;
+  margin-left: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+main #about_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+main #about_us h2 {
+  color: #000;
+  margin-top: 130px;
+}
+main #about_us p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  width: 60%;
+  margin-top: 70px;
+}
+
+main .benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+main .benefits h2 {
+  color: #000;
+  margin-top: 100px;
+}
+main .benefits .benefits_text {
+  margin-top: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+main .benefits .benefits_text span {
+  width: 35px;
+  height: 35px;
+  background: #f27468;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  margin-top: 6px;
+  padding: 2px;
+}
+main .benefits .benefits_text .left_column,
+main .benefits .benefits_text .right_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  font-size: 24px;
+  line-height: 29px;
+}
+main .benefits .benefits_text .left_column .text,
+main .benefits .benefits_text .right_column .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+main .benefits .benefits_text .left_column .text p,
+main .benefits .benefits_text .right_column .text p {
+  margin-left: 6px;
+}
+
+main .car_park {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 100px 0;
+}
+main .car_park h2 {
+  color: #000;
+}
+main .car_park .cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 60px;
+}
+main .car_park .cars .car_model {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+main .car_park .cars .car_model img {
+  width: 100%;
+}
+main .car_park .cars .car_model p {
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
+[data-tooltip] {
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+[data-tooltip]::after {
+  content: "Для того, чтобы поменять маршрут нажмите на кнопку";
+  /* Выводим текст */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  width: 300px;
+  /* Ширина подсказки */
+  left: 0;
+  top: 0;
+  /* Положение подсказки */
+  color: #fff;
+  /* Цвет текста */
+  padding: 0.5em;
+  /* Поля вокруг текста */
+  background: #000;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* Параметры тени */
+  pointer-events: none;
+  /* Подсказка */
+  opacity: 0;
+  /* Подсказка невидима */
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  /* Время появления подсказки */
+  font-size: 16px;
+  margin-left: -50px;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  /* Показываем подсказку */
+  top: 2em;
+  /* Положение подсказки */
+}
+
+
+
+@media (max-width: 440px) {
+  
+  #reservation {
+    height: 450px !important;
+  }
+  h2 {
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 29px !important;
+
+  }
+  #reservation p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+  #reservation form {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #reservation form input {
+    width: 306px !important;
+    height: 30.6px !important;
+    font-size: 9px !important;
+line-height: 11px !important;
+padding: 8px 13px !important;
+margin-top: 18px !important;
+  }
+  #reservation form input:last-child{
+    width: 134.64px !important;
+height: 30.6px !important;
+font-weight: 600 !important;
+font-size: 10px !important;
+line-height: 12px !important;
+color: #FFFFFF !important;
+border: none !important;
+min-width: 0 !important;;
+  }
+  #about_us h2{
+    margin-top: 50px !important;
+  }
+  #about_us p{
+    padding: 0 20px !important;
+    width: 100% !important;
+    font-size: 9px !important;
+line-height: 11px !important;
+margin-top: 30px !important;
+  }
+  .benefits h2{
+    margin-top: 50px !important;
+  }
+  .benefits_text{
+    margin-top: 30px !important;
+    width: 100% !important;
+    padding: 0 25px !important;
+  }
+  .right_column{
+    margin-left: 0 !important;
+  }
+  .benefits_text p{
+    font-size: 9px !important;
+line-height: 11px !important;
+  }
+  .benefits_text span{
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 9px !important;
+    line-height: 11px !important;
+    padding: 3px !important;
+  }
+  .car_park{
+    margin-top: 50px !important;
+  }
+  .cars{
+    flex-direction: column;
+    margin-top: 30px !important; 
+    width: 80% !important;
+  }
+  .car_model{
+    width: 80% !important;
+    margin-top: 20px !important;
+  }
+  .car_model p{
+    margin-top: 18px !important;
+    font-weight: 500 !important;
+font-size: 18px !important;
+line-height: 21px !important;
+
+  }
+}

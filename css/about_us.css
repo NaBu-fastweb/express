@@ -1,0 +1,32 @@
+.benefits_text .text{
+    display: flex;
+    flex-direction: column;
+}
+.benefits_text{
+    padding: 0 10%;
+    justify-content: space-between !important;
+}
+.benefits_text .left_column, .benefits_text .right_column{
+    width: 45% !important;
+}
+.head_text{
+    display: flex;
+}
+.text_footer{
+    margin-left: 0 !important;
+}
+.text p{
+    font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+text-align: justify;
+}
+.text p:last-child{
+    margin-top: 10px;
+    margin-left: -6px;
+}
+.head_text p{
+    font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+}
