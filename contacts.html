@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экспресс рейс</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script
+      src="https://kit.fontawesome.com/8c5f8983b2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header> 
+      <img id="logo_header" src="img/logo_header.png" alt="Логотип" />
+      <p>Мы работаем <br>
+        24 часа</p>
+        <div class="left_column">
+        <img src="img/phone_header.png" alt="phone" />
+        <div class="header_text">        
+          <p>+380714625469</p>
+          <p>+3800715123050</p>
+        </div>
+      </div>
+      <div class="right_column">
+        <img src="img/map.png" alt="map" />
+        <div class="header_text">   
+          <p>Донецк - Москва</p>
+          <p>Москва - Донецк</p>
+        </div>
+      </div>
+  </header>
+    <main>
+      <nav>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="car_park.html">АВТОПАРК</a></li>
+            <li><div class="dropdown">
+              <button class="dropbtn">РАСПИСАНИЕ</button>
+              <div class="dropdown-content">
+                <a href="road_1.html">Донецк-Москва</a>
+                <a href="road_2.html">Москва-Донецк</a>
+              </div></li>
+            <li><a class="menu__item" href="index.html">ГЛАВНАЯ</a></li>
+            <li><a class="menu__item" href="about_us.html">О НАС</a></li>
+            <li><a class="menu__item" href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="skyscraper">
+        <div class="blockout">
+          <div class="pad">
+            <h1>
+              ПАССАЖИРСКИЕ ПЕРЕВОЗКИ <br />
+              ДОНЕЦК - МОСКВА
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+      <h2>КОНТАКТЫ</h2>
+      <div class="contact_text">
+        <div class="left_contact">
+          <h3>График работы:</h3>
+          <p>Понедельник: Круглосуточно <br>
+            Вторник: Круглосуточно <br>
+            Среда: Круглосуточно <br>
+            Четверг: Круглосуточно <br>
+            Пятница: Круглосуточно <br>
+            Суббота: Круглосуточно <br>
+            Воскресенье: Круглосуточно</p>
+        </div>
+        <div class="right_contact">
+          <h3>Номера (Viber, What’s up)</h3>
+          <p>+380714625469 <br>
+            +3800715123050</p>
+          <h3 class="last">Группа в ВК</h3>
+          <a href="https://m.vk.com/minivan_donetsk_moscow?from=quick_search">Задать вопрос в группе</a>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+        <img id="logo_footer" src="img/logo_footer.png" alt="" />
+        <div class="text_left">
+          <div class="numbers">
+            <img src="img/phone_footer.png" alt="phone" />
+            <p>
+              +380714625469 <br />
+              +3800715123050
+            </p>
+          </div>
+          <div class="icons">
+            <a href=""><img src="img/vk.png" alt="vk" /></a>
+            <a href=""><img src="img/Whatsapp.png" alt="whatsapp" /></a>
+            <a href=""><img src="img/viber.png" alt="viber" /></a>
+          </div>
+        </div>
+        <div class="text_right">
+          <div class="route_text">
+            <img src="img/map_footer.png" alt="map" />
+            <div class="route_text_p">
+              <p>Донецк - Москва</p>
+              <p>Москва - Донецк</p>
+            </div>
+          </div>
+
+          <button onclick="open_feedback()">ОБРАТНАЯ СВЯЗЬ</button>
+        </div>
+      <p id="our_href">
+        Политика конфиденциальности <br />
+        Разработано NaBu
+      </p>
+    </footer>
+    <div class="feedback" style="display: none">
+      <div class="blockout">
+        <p>
+          ОСТАВЬТЕ ВАШ НОМЕР <br />
+          И МЫ ВАМ ПЕРЕЗВОНИМ
+        </p>
+  <!--       <form action="send.php"> -->
+    <form action="#">
+          <input type="text" name="fio" placeholder="Ваше имя" />
+          <input type="tel" name="email" placeholder="Телефон" />
+          <textarea name="" id="" placeholder="Комментарий"></textarea>
+          <div class="div">
+            <input
+              type="submit"
+              placeholder="ОТПРАВИТЬ"
+              onclick="open_successfully()"
+            />
+          </div>
+        </form>
+        <button id="close_feedback"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="successfully" style="display: none">
+      <div class="successfully_block">
+        <div class="okay"><i class="fas fa-check"></i></div>
+        <p>УСПЕШНО</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//code-ya.jivosite.com/widget/q1f6jw2sAO" async></script>
+  </body>
+</html>
